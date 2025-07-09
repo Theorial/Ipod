@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Drum Kit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Arvo"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
+  <body>
+    <div class="music-player">
+      <audio id="audio-player" autoplay="true" src="sounds\crash.mp3"></audio>
+      <!-- Album Art -->
+      <div class="album-art">
+        <i class="fas fa-music"></i>
+      </div>
 
-  <body></body>
-  <footer>Real Ipod</footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
+      <!-- Track Info -->
+      <div class="track-info">
+        <h2>Song Title</h2>
+        <p>Artist Name</p>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="time-info">
+          <span class="current-time">0:00</span>
+          <span class="duration">3:45</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="control-btn shuffle-btn" title="Shuffle">
+          <i class="fas fa-random"></i>
+        </button>
+        <button class="control-btn prev-btn" title="Previous">
+          <i class="fas fa-step-backward"></i>
+        </button>
+        <button class="control-btn play-pause" title="Play/Pause">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="control-btn next-btn" title="Next">
+          <i class="fas fa-step-forward"></i>
+        </button>
+        <button class="control-btn repeat-btn" title="Repeat">
+          <i class="fas fa-redo"></i>
+        </button>
+      </div>
+
+      <!-- Volume Control -->
+      <div class="volume-control">
+        <i class="fas fa-volume-up"></i>
+        <input
+          type="range"
+          class="volume-slider"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.7"
+        />
+      </div>
+    </div>
+    <footer>Real Ipod INC.</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
