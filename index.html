@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="music-player">
-      <audio id="audio-player" autoplay="true" src="sounds\crash.mp3"></audio>
+      <audio id="audio-player" src="sounds\crash.mp3"></audio>
       <!-- Album Art -->
       <div class="album-art">
         <i class="fas fa-music"></i>
@@ -56,6 +56,12 @@
 
       <!-- Volume Control -->
       <div class="volume-control">
+        <div class="theme-toggle">
+          <button class="control-btn theme-btn" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+        </div>
         <i class="fas fa-volume-up"></i>
         <input
           type="range"

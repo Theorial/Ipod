@@ -24,6 +24,19 @@ const playList = [
   },
 ];
 
+// Theme Toggle Functionality
+$(".theme-btn").click(function () {
+  $("body").toggleClass("dark-mode");
+
+  // Save preference to localStorage
+  const isDarkMode = $("body").hasClass("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
+});
+
+// Check for saved theme preference
+if (localStorage.getItem("darkMode") === "true") {
+  $("body").addClass("dark-mode");
+}
 // Load a track
 function loadTrack(index) {
   const track = playList[index];
@@ -119,6 +132,13 @@ function nextTrack() {
   currentTrackIndex = (currentTrackIndex + 1) % playList.length;
   loadTrack(currentTrackIndex);
 }
+// function shuffle(a) {
+//   for (let i = a.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [a[i], a[j]] = [a[j], a[i]];
+//   }
+//   return a;
+// }
 
 function shuffle() {
   let newIndex;
