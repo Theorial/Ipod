@@ -5,22 +5,22 @@ const audioPlayer = document.getElementById("audio-player");
 // Playlist
 const playList = [
   {
-    title: "Crash",
-    artist: "Crasher",
-    src: "sounds/crash.mp3",
-    image: "images/crash.png",
+    title: "Hope Is the Thing With Feathers",
+    artist: "Robin (Chevy)",
+    src: "sounds/Robin (Chevy) - Hope Is the Thing With Feathers  Honkai_ Star Rail.mp3",
+    image: "images/robin.jpg",
   },
   {
-    title: "Kick-bass",
-    artist: "Kick-basser",
-    src: "sounds/kick-bass.mp3",
-    image: "images/kick.png",
+    title: "Love Story",
+    artist: "Taylor Swift",
+    src: "sounds/Taylor Swift - Love Story.mp3",
+    image: "images/Taylor_Swift.jpg",
   },
   {
-    title: "Snare",
-    artist: "Snarer",
-    src: "sounds/snare.mp3",
-    image: "images/snare.png",
+    title: "Sway to My Beat in Cosmos",
+    artist: "Robin (Chevy)",
+    src: "sounds/Sway to My Beat in Cosmos - Honkai_ Star Rail OST.mp3",
+    image: "images/robin2.jpg",
   },
 ];
 
